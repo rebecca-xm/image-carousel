@@ -1,20 +1,23 @@
 .body {
     margin: 150px 250px;
+    text-align: center;
     
     .carousel {  
+        width: 100%;
         overflow: hidden;
-        margin: 0 50px;
+        margin: 0 auto;
         scroll-behavior: smooth;
     
             .wrapperImg {  
                 position: relative;
-                width: 2850px;
+                width: 2600px;
                 overflow: hidden;
 
                 .images {
                     overflow: hidden;
 
                     img {
+                        object-fit: cover;
                         margin: 0 40px;
                     }
                 }
@@ -23,13 +26,12 @@
 
         .carouselBtns {
             position: relative;
+            display: inline-block;
     
             .btn {
                 position: absolute;
-                top: -150px;
-                left: 0px;
                 border: 0;
-                padding: 20px;
+                padding: 10px;
                 cursor: pointer;
                 background: black;
                 color: white;
@@ -37,7 +39,7 @@
 
     
             .btn:nth-of-type(2) {
-                left: 145vh;
+                margin: 0 50px;
             }
         }
 }
