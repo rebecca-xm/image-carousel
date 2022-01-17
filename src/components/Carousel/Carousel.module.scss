@@ -1,0 +1,69 @@
+.body {
+    margin: 150px 250px;
+    
+    .carousel {  
+        overflow: hidden;
+        margin: 0 50px;
+        scroll-behavior: smooth;
+    
+            .wrapperImg {  
+                position: relative;
+                width: 2850px;
+                overflow: hidden;
+
+                .images {
+                    overflow: hidden;
+
+                    img {
+                        margin: 0 40px;
+                    }
+                }
+            }
+    }
+
+        .carouselBtns {
+            position: relative;
+    
+            .btn {
+                position: absolute;
+                top: -150px;
+                left: 0px;
+                border: 0;
+                padding: 20px;
+                cursor: pointer;
+                background: black;
+                color: white;
+            }
+
+    
+            .btn:nth-of-type(2) {
+                left: 145vh;
+            }
+        }
+}
+
+  
+  
+// @media only screen and (max-width: 768px) {
+//     .carousel {
+//         overflow-x: scroll;
+//     }
+  
+//     .carousel::after {
+//         content: "→";
+//         position: absolute;
+//         top: 50vh;
+//         right: 0;
+//     }
+
+//     .carousel::before {
+//         content: "←";
+//         position: absolute;
+//         top: 50vh;
+//         left: 0;
+//     }
+  
+//     .carouselBtns {
+//       display: none;
+//     }
+//   }
